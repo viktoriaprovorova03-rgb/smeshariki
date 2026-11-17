@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b16">
+  <title>Пульс ночи — мини-сериал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-dot"></span> NIGHT SIGNAL</a>
+    <nav>
+      <a href="#story">О серии</a>
+      <a href="#characters">Персонажи</a>
+      <a href="#frames">Кадры</a>
+    </nav>
+    <a class="topbar-cta" href="#story">Исследовать <span>↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pulse"></span> ОРИГИНАЛЬНЫЙ МИНИ-СЕРИАЛ · 6 ЭПИЗОДОВ</p>
+        <h1>ПУЛЬС<br><span>НОЧИ</span></h1>
+        <p class="hero-description">
+          Когда город засыпает, кто-то начинает передавать сигналы из будущего.
+        </p>
+        <a class="button button-primary" href="#story">Войти в историю <span>↘</span></a>
+      </div>
+      <div class="hero-side-note">СЕЗОН 01 <span>•</span> 2089</div>
+      <div class="hero-bottom">
+        <span>НАЖМИ, ЧТОБЫ УЗНАТЬ БОЛЬШЕ</span>
+        <span class="scroll-line"></span>
+        <span>01 / 03</span>
+      </div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-label"><span>01</span> СЮЖЕТ</div>
+      <div class="story-grid">
+        <div>
+          <p class="kicker">ОДИН СИГНАЛ. ДВА ГОЛОСА.</p>
+          <h2>Город слышит<br>то, чего <em>ещё не было.</em></h2>
+        </div>
+        <div class="story-copy">
+          <p>
+            Каждую ночь в 03:17 старое радио на крыше заброшенной обсерватории
+            ловит странный сигнал. В нём — обрывки событий, которые произойдут
+            завтра. Инженер Лея и уличный музыкант Марк решают выяснить, кто
+            отправляет эти сообщения.
+          </p>
+          <p class="muted">Но чем ближе они к разгадке, тем сильнее меняется настоящее.</p>
+          <button class="text-button" id="signalButton" type="button">
+            Поймать сигнал <span>↗</span>
+          </button>
+          <div class="signal-message" id="signalMessage" aria-live="polite">
+            <span class="signal-tag">СООБЩЕНИЕ #017</span>
+            <p>«Не доверяй тишине. Она тоже умеет отвечать»</p>
+          </div>
+        </div>
+      </div>
+      <div class="story-stats">
+        <div><strong>06</strong><span>ЭПИЗОДОВ</span></div>
+        <div><strong>03:17</strong><span>ВРЕМЯ СИГНАЛА</span></div>
+        <div><strong>∞</strong><span>ВОПРОСОВ</span></div>
+      </div>
+    </section>
+
+    <section class="characters section-wrap" id="characters">
+      <div class="section-heading">
+        <div>
+          <div class="section-label"><span>02</span> ПЕРСОНАЖИ</div>
+          <h2>Два пути.<br><em>Одна частота.</em></h2>
+        </div>
+        <p>Нажми на карточку — и узнай, что каждый скрывает.</p>
+      </div>
+
+      <div class="character-grid">
+        <article class="character-card" tabindex="0" role="button" aria-label="Подробнее о Лее">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="Портрет Леи">
+          <div class="card-gradient"></div>
+          <span class="character-number">01 / ИНЖЕНЕР</span>
+          <div class="character-info">
+            <h3>ЛЕЯ</h3>
+            <p>Собирает сигналы из шума.</p>
+            <span class="card-hint">НАЖМИ, ЧТОБЫ ОТКРЫТЬ +</span>
+          </div>
+          <div class="character-secret">
+            <span class="secret-label">ЕЁ СЕКРЕТ</span>
+            <p>Однажды она уже слышала этот голос. В детстве.</p>
+          </div>
+        </article>
+
+        <article class="character-card" tabindex="0" role="button" aria-label="Подробнее о Марке">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=85" alt="Портрет Марка">
+          <div class="card-gradient"></div>
+          <span class="character-number">02 / МУЗЫКАНТ</span>
+          <div class="character-info">
+            <h3>МАРК</h3>
+            <p>Слышит мелодию в помехах.</p>
+            <span class="card-hint">НАЖМИ, ЧТОБЫ ОТКРЫТЬ +</span>
+          </div>
+          <div class="character-secret">
+            <span class="secret-label">ЕГО СЕКРЕТ</span>
+            <p>Он узнаёт в сигнале ритм собственной песни.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="frames section-wrap" id="frames">
+      <div class="section-heading">
+        <div>
+          <div class="section-label"><span>03</span> ИЗ СЕРИИ</div>
+          <h2>Моменты, которые<br><em>остаются с тобой.</em></h2>
+        </div>
+        <p>Нажми на кадр, чтобы рассмотреть его поближе.</p>
+      </div>
+
+      <div class="frame-grid">
+        <button class="frame frame-large" type="button" aria-label="Посмотреть кадр: крыша обсерватории">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85" alt="Ночное звёздное небо">
+          <span class="frame-caption">01 — КРЫША ОБСЕРВАТОРИИ</span>
+          <span class="frame-plus">↗</span>
+        </button>
+        <button class="frame" type="button" aria-label="Посмотреть кадр: дорога в ночи">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Тихий пейзаж в сумерках">
+          <span class="frame-caption">02 — ПОСЛЕДНЯЯ ОСТАНОВКА</span>
+          <span class="frame-plus">↗</span>
+        </button>
+        <button class="frame" type="button" aria-label="Посмотреть кадр: огни города">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85" alt="Огни ночного города">
+          <span class="frame-caption">03 — ГОРОД НЕ СПИТ</span>
+          <span class="frame-plus">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <span class="final-star">✳</span>
+      <p>СЛУШАЙ ВНИМАТЕЛЬНО</p>
+      <h2>Следующий сигнал<br>может быть <em>твоим.</em></h2>
+      <a class="button button-outline" href="#home">На крышу <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2089 NIGHT SIGNAL</span>
+    <span>СДЕЛАНО ПОД ЗВЁЗДАМИ <span class="footer-star">✦</span></span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр кадра">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
